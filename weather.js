@@ -168,8 +168,6 @@ function ricerca(event){
 
 }
 
-
-const apiKey = 'f0692618e34e0a9c9d53782267091a96';
 const weather1 = document.querySelector('.weather');
 const input = document.getElementById('search').addEventListener('blur', ricerca);
 let prefe;
