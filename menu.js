@@ -18,7 +18,7 @@ function chiudi(event){
     var2.style.display = '';
 }
 
-const client_id = '602186831812-l3rqtum4ltrbn5q80589nrmddtj2ae4t.apps.googleusercontent.com';
+const client_id = '';
 const link = "https://accounts.google.com/o/oauth2/v2/auth?client_id="+client_id+"&redirect_uri=http://localhost/mhw4//video.php&response_type=token&scope=https://www.googleapis.com/auth/youtube.force-ssl&include_granted_scopes=true&state=pass-through%20value";
 const a = document.querySelectorAll('.token');
 const close1 = document.querySelector('#close');
