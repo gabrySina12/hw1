@@ -6,7 +6,7 @@ require_once 'auth.php';
 header('Content-Type: application/json');
 
 
-    $apiKey = 'f0692618e34e0a9c9d53782267091a96';
+    $apiKey = '';
 
     $query = urlencode($_GET["q"]);
     $url = "http://api.weatherstack.com/current?access_key=$apiKey&query=$query";
