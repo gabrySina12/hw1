@@ -1,0 +1,358 @@
+html {
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+    margin: 0 auto;
+    padding: 0;
+    font-size: 16px;
+    font-family: var(--font-stack);
+    color: #1a1919;
+    text-align: center;
+    background-color: #fff;
+}
+
+:root, [data-theme=defaultTheme] {
+    --font-stack: "Bull Text",Helvetica,sans-serif;
+    --color-highlight: #db0a40;
+    --color-highlight-hover: #f61a4f;
+}
+
+.sidebar-view {
+    height: 100vh;
+    display: flex;
+    overflow: hidden;
+}
+
+@media (min-width: 1024px){
+.sidebar {
+    position: relative;
+    flex-shrink: 0;
+    display: flex !important;
+    flex-direction: column;
+    width: 280px;
+    min-height: 100vh;
+    background-color: #f8f8f8;
+}
+}
+
+.sidebar {
+    display: none;
+    border: solid #e2e3e5;
+    border-width: 2px 2px 0 0;
+}
+
+.sidebar_header {
+    padding: 40px 16px 16px;
+}
+
+.avatar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 96px;
+    height: 96px;
+    margin: 0 auto;
+    border-radius: 50%;
+    background-color: #fff;
+    background-position: 50%;
+    background-size: cover;
+}
+
+.avatar__text {
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.sidebar__heading {
+    margin: 16px 0 0;
+    min-height: 32px;
+    font-size: 18px;
+    line-height: 32px;
+    overflow-wrap: break-word;
+}
+
+.sidebar__subheading {
+    min-height: 24px;
+    margin: 0;
+    font-size: 14px;
+    font-weight: 400;
+    color: #737477;
+    line-height: 24px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.nav--vertical {
+    border-top: 1px solid #e2e3e5;
+}
+
+.nav__item {
+    font-size: 16px;
+    font-weight: 500;
+    color: #737477;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+.nav__item {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 12px 32px;
+    transition: background-color .2s ease-in,color .2s;
+    border-left: 2px solid transparent;
+}
+
+
+
+
+.nav--vertical .nav__icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 32px;
+    height: 32px;
+    margin-right: 16px;
+}
+
+.nav--vertical .nav__text {
+    min-height: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.nav--vertical .nav__item.active {
+    color: var(--color-highlight);
+    background: rgba(219,10,64,.05) !important;
+    border-left-color: var(--color-highlight);
+    filter: invert(21%) sepia(97%) saturate(3578%) hue-rotate(333deg) brightness(82%) contrast(111%);
+}
+
+@media (min-width: 1024px){
+.sidebar-view__content {
+    min-width: 0;
+    text-align: left;
+}
+}
+
+.nav--vertical .nav__item:hover {
+    background-color: rgba(226,227,229,.5);
+}
+
+.sidebar-view__content {
+    display: flex;
+    flex-flow: column;
+    flex: 1 1;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.setting {
+    padding-bottom: 32px;
+    overflow: auto;
+}
+
+@media (min-width: 1024px){
+.desktop__header {
+    display: block !important;
+    }
+}
+
+.desktop__header {
+    display: none;
+}
+
+@media (min-width: 1024px){
+.sidebar-view__header {
+    padding: 10px 40px 0 !important;
+    background-color: #fff !important;
+    }
+}
+
+@media (min-width: 768px){
+.sidebar-view__header {
+    padding: 0 32px;
+    }
+}
+
+.sidebar-view__header {
+    padding: 0px 16px;
+    text-align: left;
+    background-color: #f8f8f8;
+    border-bottom: 1px solid #e2e3e5;
+}
+
+.sidebar-view__inner {
+    margin: 16px 16px 32px;
+    padding-bottom: 32px;
+    text-align: left;
+    min-height: 0;
+}
+
+@media (min-width: 768px){
+.sidebar-view__inner {
+    margin: 32px;
+    }
+}
+
+@media (min-width: 1024px){
+.sidebar-view__inner {
+    margin: 32px 40px;
+    }
+}
+
+.settings .sidebar-view__inner {
+    border-bottom: 1px solid #e2e3e5;
+}
+
+.row__label {
+    display: flex;
+    justify-content: space-between;
+    min-height: 28px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 28px;
+}
+
+.settings .row__label {
+    max-width: 343px;
+}
+@media (min-width: 768px){
+.row__buttons, .row__label {
+    margin-top: 4px;
+    }
+}
+
+#new__team input{
+    border-radius: 6px;
+    background-color: white;
+    border: 2px solid #e2e3e5;
+    color: #737477;
+}
+
+.errorj{
+    background-color: rgb(255 0 85 / 46%) !important;
+  }
+.squadra_err{
+    color: var(--color-highlight) !important;
+}
+
+.gif {
+        border-radius: 15px;
+        height: 150px;
+        width: auto;
+        margin-left: 18px;
+}
+
+#option{
+    display: none;
+}
+
+#team_lable input {
+    border-radius: 6px;
+    background-color: white;
+    border: 2px solid #e2e3e5;
+    color: #737477;
+    cursor: grab;
+}
+
+.showTeam:hover{
+    color: #fff !important;
+    background-color: var(--color-highlight) !important;
+    border-color: var(--color-highlight);
+}
+
+#team_lable{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    width: 100%;
+}
+
+.row{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding: 12px 32px;
+        transition: background-color .2s ease-in,color .2s;
+        border-left: 2px solid transparent;
+        font-size: 16px;
+        font-weight: 500;
+        color: #737477;
+        text-transform: capitalize;
+        cursor: pointer;
+        border-bottom: 1px solid #e2e3e5;
+        width: 250px;
+        border-radius: 6px;
+}
+
+.row:hover{
+    background-color: rgba(226,227,229,.5);
+}
+
+#favorite{
+    display: none;
+}
+
+#fav_items{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 100%;
+}
+
+#topsideMember{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+#topsideMember h1{
+    margin: 3px;
+  }
+  
+#topsideMember a{
+      background-size:cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      width: 24px;
+      height: 24px;
+      margin: 3px;
+    
+}
+
+.prefPic{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bar-view__video{
+    display: flex;
+    position: relative;
+}
+
+#sezTeam{
+    flex-direction: column;
+}
+
+.row__labels{
+    display: flex;
+    justify-content: space-between;
+    min-height: 28px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 28px;
+}
+
+.left{
+    width: 30%;
+}
